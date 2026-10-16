@@ -1,0 +1,248 @@
+/* SAE ESCOLAR - ESTILOS ORDENADOS */
+/* Los nombres con punto (.) son clases que puedes usar con class="nombre". */
+/* Cambia un valor, guarda y actualiza tu navegador para ver el efecto. */
+
+/* ===== LETRA DEL PROFESOR CESAR ===== */
+.cesar {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background:#f3f5f9;
+    color:#243047;
+    margin:0;
+    padding:25px;
+    line-height:1.5;
+}
+
+h1,h2 {
+    color:#263b61;
+}
+
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin:15px 0 22px;
+}
+
+nav a {
+    background:#dce6f6;
+    color:#243e69;
+    text-decoration:none;
+    padding:9px 12px;
+    border-radius:7px;
+}
+
+nav a:hover,nav a.actual {
+    background:#899dbb;
+    color:#fff;
+}
+
+main {
+    max-width:1150px;
+    margin:auto;
+}
+
+
+/* ===== CUADROS DE ALAN ===== */
+.alan {
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 9px #0001;
+    margin:15px 0;
+}
+
+label {
+    display:block;
+    margin:10px 0;
+}
+
+input,select {
+    padding:9px;
+    border:1px solid #bdc7d6;
+    border-radius:6px;
+    max-width:100%;
+    width:350px;
+}
+
+
+/* ===== BOTONES ===== */
+button,.boton {
+    display:inline-block;
+    border:0;
+    background:#4269a2;
+    color:white;
+    padding:9px 13px;
+    border-radius:6px;
+    text-decoration:none;
+    cursor:pointer;
+    margin:3px;
+}
+
+.rojo {
+    background:#b54d4d;
+}
+
+.gris {
+    background:#6c7788;
+}
+
+
+/* ===== TABLAS ===== */
+.tabla-caja {
+    overflow-x:auto;
+}
+
+table {
+    border-collapse:collapse;
+    width:100%;
+    background:white;
+}
+
+td,th {
+    padding:10px;
+    border-bottom:1px solid #e0e5ec;
+    text-align:left;
+    white-space:nowrap;
+}
+
+th {
+    background:#e7edf7;
+}
+
+.aviso {
+    padding:12px;
+    background:#e7f1e7;
+    border-radius:7px;
+}
+
+.error {
+    background:#ffe5e5;
+}
+
+.acciones {
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+form.enlinea {
+    display:inline;
+}
+
+form.enlinea button {
+    margin:0;
+}
+
+details {
+    margin:12px 0;
+}
+
+summary {
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.menu {
+    display:inline-block;
+    position:relative;
+    z-index:100;
+    margin:8px 0 20px;
+    vertical-align:top;
+    outline:none;
+}
+
+.boton-menu {
+    display:flex;
+    align-items:center;
+    gap:15px;
+    width:max-content;
+    background:#4269a2;
+    color:white;
+    padding:10px 14px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    user-select:none;
+}
+
+.menu:hover .boton-menu,.menu:focus-within .boton-menu {
+    background:#314d76;
+    border-radius:5px 5px 0 0;
+}
+
+.menu .flecha {
+    transition:transform .15s ease;
+}
+
+.menu:hover .flecha,.menu:focus-within .flecha {
+    transform:rotate(180deg);
+}
+
+.menu nav {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:245px;
+    max-width:calc(100vw - 40px);
+    max-height:70vh;
+    overflow-y:auto;
+    background:#f8faff;
+    border:1px solid #d7deea;
+    border-radius:0 6px 6px 6px;
+    box-shadow:0 6px 15px #0002;
+    margin:0;
+    padding:5px;
+    z-index:101;
+}
+
+.menu:hover nav,.menu:focus-within nav {
+    display:block;
+}
+
+.grupo-menu {
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+    margin:0 0 7px;
+}
+
+.grupo-menu:last-child {
+    margin-bottom:0;
+}
+
+.grupo-menu strong {
+    font-size:13px;
+    color:#263b61;
+    padding:7px 9px 4px;
+    border-bottom:1px solid #dce3ed;
+}
+
+.menu nav a {
+    display:block;
+    background:transparent;
+    color:#243e69;
+    text-decoration:none;
+    border-radius:3px;
+    padding:7px 10px;
+    margin:0;
+    font-size:14px;
+}
+
+.menu nav a:hover,.menu nav a:focus-visible {
+    background:#c0cde0;
+    color:#1c3152;
+}
+
+.menu nav a.actual {
+    background:#899dbb;
+    color:#fff;
+}
+
